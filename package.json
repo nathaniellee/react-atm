@@ -7,7 +7,7 @@
   "scripts": {
     "bundle": "webpack --progress --colors",
     "lint": "eslint src",
-    "start": "npm run lint && npm run bundle && node server.js",
+    "start": "npm run lint && npm test && npm run bundle && node server.js",
     "test": "mocha --opts ./test/mocha.opts --compilers js:babel/register --recursive test/**/*.jsx"
   },
   "author": "Nathaniel Lee <nathaniel.k.lee@gmail.com>",
